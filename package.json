@@ -1,0 +1,29 @@
+{
+  "name": "super-mario",
+  "version": "1.0.0",
+  "description": "Super Mario Bros Lost Levels clone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncurcio/super-mario-js.git"
+  },
+  "keywords": [
+    "super",
+    "mario",
+    "bros",
+    "nintendo",
+    "phaser"
+  ],
+  "author": "John Curcio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johncurcio/super-mario-js/issues"
+  },
+  "homepage": "https://github.com/johncurcio/super-mario-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
