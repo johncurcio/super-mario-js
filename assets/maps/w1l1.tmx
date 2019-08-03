@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="240" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="20">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="240" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="41">
  <tileset firstgid="1" name="ground" tilewidth="16" tileheight="16" spacing="2" tilecount="810" columns="27">
-  <image source="SNES - Super Mario All-Stars Super Mario Bros &amp; The Lost Levels - Tileset.png" trans="ffffd5" width="485" height="546"/>
+  <image source="../tilesets/Tileset.png" trans="ffffd5" width="485" height="546"/>
   <tile id="1">
    <animation>
     <frame tileid="1" duration="100"/>
@@ -9,54 +9,115 @@
     <frame tileid="3" duration="200"/>
    </animation>
   </tile>
+  <tile id="195">
+   <animation>
+    <frame tileid="195" duration="150"/>
+    <frame tileid="196" duration="150"/>
+    <frame tileid="197" duration="150"/>
+   </animation>
+  </tile>
  </tileset>
  <tileset firstgid="811" name="hills" tilewidth="16" tileheight="16" tilecount="11180" columns="130">
-  <image source="SNES - Super Mario All-Stars Super Mario Bros &amp; The Lost Levels - Hills.png" trans="ffffff" width="2085" height="1390"/>
+  <image source="../tilesets/Hills.png" trans="ffffff" width="2085" height="1390"/>
  </tileset>
  <tileset firstgid="11991" name="clouds" tilewidth="16" tileheight="16" tilecount="4850" columns="194">
-  <image source="SNES - Super Mario All-Stars Super Mario Bros &amp; The Lost Levels - Clouds.png" trans="ffffff" width="3109" height="400"/>
+  <image source="../tilesets/Clouds.png" trans="ffffff" width="3109" height="400"/>
  </tileset>
+ <tileset firstgid="16841" name="Items &amp; Blocks" tilewidth="16" tileheight="16" spacing="1" margin="1" tilecount="66" columns="6">
+  <image source="../tilesets/Items &amp; Blocks.png" trans="0094ff" width="106" height="199"/>
+  <tile id="12">
+   <animation>
+    <frame tileid="12" duration="150"/>
+    <frame tileid="13" duration="150"/>
+    <frame tileid="14" duration="150"/>
+    <frame tileid="15" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="24">
+   <animation>
+    <frame tileid="24" duration="150"/>
+    <frame tileid="25" duration="150"/>
+    <frame tileid="26" duration="150"/>
+    <frame tileid="27" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="17" name="secrets" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAC+BjDAAAE=
+  </data>
+ </layer>
  <layer id="1" name="clouds" width="240" height="13">
   <data encoding="base64" compression="zlib">
    eJztzjENAAAIA7Cp4sC/MDzwEJJWQRMAAAAAAAAAAAAAgB+qrwfA1gDUlQBx
   </data>
  </layer>
  <imagelayer id="8" name="clouds" visible="0" offsetx="5.66667" offsety="-33.6667">
-  <image source="SNES - Super Mario All-Stars Super Mario Bros &amp; The Lost Levels - Clouds.png" trans="ffffff" width="3109" height="400"/>
+  <image source="SNES - Super Mario All-Stars Super Mario Bros &amp; The Lost Levels - Clouds.png" trans="ffffff"/>
  </imagelayer>
- <layer id="5" name="hills" width="240" height="13">
+ <layer id="5" name="hills" width="240" height="13" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt0zsOggAURNHXwbIUEd228knQTTGllYkVmJyT3H6aqQIAAAAAAAAA4IhOTdU5dc3eS4BfPPLZZxrTlGYfhr/QtVWX1KdrGtIt3du9lwHfjPnolOa0fLSmV3r7MBzKBrvCDio=
   </data>
  </layer>
+ <layer id="3" name="ground" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzt0DsOABAQBUDHZ0+t34gGQTKTvGIL9lMKAAAAAAAAAAAAAMAf2kNZmWn2NtLOdePM+e+Rnf1OZnSnSPWpPrd3/zUdGkp0Ig==
+  </data>
+ </layer>
  <layer id="6" name="poles" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJzty0EKgDAQA8Dd/79z+w4vFsRDLRQs4swlhyQRAAAAAAAAAAB8VVvsgffVmZnjXe/r8gE2y1vO7J62APAjBzrpBIU=
+   eJzt0UEKgDAMBED7/3fqO7woiIhWjCmBmUsPtknWTBMAAAAAAAAAAFUtH79nzJBdZ2TvkfuonmHk/rPN29na/b39+3x4E+1phie9Wa7eRPR92/uuVvY+qmeInL+Udjp77v31f77W7c0S2fNcIytD9D6qZ4icH+ClFV6DFpg=
   </data>
  </layer>
  <layer id="7" name="fences" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJztw7ENAAAIA6D+/6SvuHcx7pCQAAAAAAAAAAAAAPAxFQC4LWBPA30=
-  </data>
- </layer>
- <layer id="3" name="ground" width="240" height="13">
-  <data encoding="base64" compression="zlib">
-   eJztwwEJAAAAAqDu97odgYIJAAAAAAAAAAAAAMCHqrcHEc6AcQ==
+   eJztzzEKACAMA8D+/5N+xVVEpILZ7qDQKW2qAAAAAAAAAAAAAHgxtknfOu0/89Nd1mwd7vmpDun/ATom3kMXhg==
   </data>
  </layer>
  <layer id="9" name="bricks" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJzt17ENACAIRUHcn6F1ABq1UJK75Pc0ryACAAAA2JFroxjwv3x9AHBMv9BX1a+moYfq/9UvAAAAADcmRCID3g==
+   eJzt10EKwCAMBED7fx9tHxCKtloNzMBew172kFIAAACAEfXOFeQ0UceePN2YdXe3DB1Zo+4uALxmv5BXtF+bhhyi//fk/X75fQEAAAD4RwPnHQQQ
   </data>
  </layer>
- <layer id="10" name="coins" width="240" height="13">
+ <layer id="14" name="stairs" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJztw7ENAAAMAiDT/4/uA07OkJAAAAAAAAAAwOZKAAAAAGge52gACw==
+   eJzt01sKgDAMRcHsnyxaBL/Ex0etJHQGuoHm3AgAAAAAusvjAb1k2C90lGG//Etn3zhv17+ym92BzsZdbde/ooP67rbrbmvTQX1P23W3dY12oJ353rbrBkA1G9eMHy0=
+  </data>
+ </layer>
+ <layer id="15" name="coins" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztwwENAAAMAiD753qwN9ACsJEAAABsNwIAAAAAAAAAADQPkJEGIQ==
+  </data>
+ </layer>
+ <layer id="10" name="coinBricks" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzt0MEJAAAIAzFx/6FdwJfgRxPoANcIAAAAAAAAAJjJZp90/Zd/+NAIAAAA7ClbtgAh
   </data>
  </layer>
  <layer id="4" name="entrance" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJzt07kNwkAARNF1QRxlAO6Cy1Vgg6vgcq9MTuQAoZXek34+yZQCAAAAAAAA3xZNKcu0Suvm32uAOTb57DbtUuu/UI19/npIx3RK59T5MFThkq/2aUjXdEuj/0IV7vnqIz3TK73T5L8A8DMfCycK8g==
+   eJzt080RgjAABeGkH1C6EKULBa3C3ypQsFf27tmQzOw3s/d3eSFIkiRJkiRJkiRJv+oYwoa21MS110jrq2I5v2jZtqcDdRnvlFLZxTJ+cWTXiXoa6EyXTLdKqZTyiyubbnSnBz3pleFOKaVSfjGy6U0fmmimb4Y7pZT8haR/WgDZExZY
   </data>
  </layer>
+ <layer id="13" name="pipes" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzt1sERgCAMBMAMjWsd2qz4hw9ORpTdCpgLF4gAAAAAAFjbViL28vYpgBFH7e6pv/BJ+svNPyxHK9fRrM2IHns8RyvX0azNiB53I8fs/fWm/4P+5pi9v+Y+vyc71n5mRRf/3xpw
+  </data>
+ </layer>
+ <layer id="21" name="flag" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJzt00ENACEQwED8Bxf4OG3ngc+mYUZBP10LANrOdABw7ZsOAK75F7r8C13+hS7/Qpd/ocu/0OVf6PIvdO3pAOApP16sB94=
+  </data>
+ </layer>
+ <objectgroup id="20" name="hidden_items">
+  <object id="33" gid="83" x="336" y="143.667" width="16" height="16"/>
+  <object id="34" gid="109" x="496" y="143.667" width="16" height="16"/>
+  <object id="35" gid="16853" x="1009.33" y="144.333" width="16" height="16"/>
+  <object id="36" gid="16865" x="1231.33" y="143.333" width="16" height="16"/>
+  <object id="37" gid="16871" x="2167" y="133" width="16" height="16"/>
+  <object id="38" gid="16841" x="2495.67" y="144" width="16" height="16"/>
+  <object id="39" gid="109" x="1519.33" y="143.333" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="22" name="spawn_enemies"/>
 </map>
