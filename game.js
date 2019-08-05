@@ -1,4 +1,4 @@
-import FlappyBirdScene from './js/FlappyBirdScene.js';
+import MarioScene from './js/MarioScene.js';
 
 window.onload = function(){
     var config = {
@@ -14,10 +14,12 @@ window.onload = function(){
         },
         scale: {
             mode: Phaser.Scale.FIT,
-            width: 288,
-            height: 512
+            width: 800,
+            height: 600
         },
-        scene : [ FlappyBirdScene ]
+        scene : [ 
+            MarioScene 
+        ]
     };
 
     var game = new Phaser.Game(config);
