@@ -3,6 +3,7 @@ import MarioScene from './js/MarioScene.js';
 window.onload = function(){
     var config = {
         type: Phaser.AUTO,
+        backgroundColor: 0x000,
         physics: {
             default: 'arcade',
             arcade: {

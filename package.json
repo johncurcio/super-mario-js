@@ -4,6 +4,8 @@
   "description": "Super Mario Bros Lost Levels clone",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "startDev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +27,8 @@
   "homepage": "https://github.com/johncurcio/super-mario-js#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
